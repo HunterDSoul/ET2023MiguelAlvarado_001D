@@ -1,0 +1,27 @@
+from os import system
+system("cls")
+
+
+arr = [[0 for j in range (10)]for i in range (10)]
+num = 1
+
+for i in range(10):
+    for j in range(10):
+        arr[i][j] = num
+        num += 1 
+        
+for i in range (10):
+    for j in range (10):
+        print (arr[i][j], end="\t")
+    print()
+    
+pos = input("Ingrese la posicion que desea elegir (por ejemplo, '3, 4': ")
+row, col = map(int, pos.split(","))
+
+if arr[row][col] != "x":
+    arr[row][col] = "x"
+    print("El valor en la posicion", pos, "se ha cambiado a 'x'.")
+else:
+    print("El valor en la posicion", pos, "ya es 'x' y no se puede cambiar.")
+    
+    
