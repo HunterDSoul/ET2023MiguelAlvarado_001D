@@ -5,7 +5,7 @@ import numpy as np
 
 while True:
     print("Menu de opciones entradas: ")
-    print("1. Comprar entradas")
+    print("1. Comprar entradas ()")
     print("2. Mostrar ubicaciones disponibles")
     print("3. Ver listado de asistentes")
     print("4. Mostrar ganancias totales")
@@ -32,5 +32,13 @@ while True:
         print("Su asiento elegido es:", pos, "Y ha sido reservado ")
     else:
         print("Asiento no disponible", pos," Seleccione otro porfavor")
+    if opcion == '2':
+        print("Ha seleccionado la opcion 2")
+    elif opcion == '3':
+        print("Ha seleccionado la opcion 3")
+    elif opcion == '4':
+        print("Ha seleccionado la opcion 4")
+    elif opcion == '5':
+        print("Ha elegido salir, !Hasta pront¡")
         
         
